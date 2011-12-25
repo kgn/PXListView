@@ -97,6 +97,11 @@
 #pragma mark -
 #pragma mark Drag & Drop
 
+- (PXListViewDropHighlight)dropHighlight
+{
+    return _dropHighlight;
+}
+
 - (void)setDropHighlight:(PXListViewDropHighlight)inState
 {
 	[[self listView] setShowsDropHighlight: inState != PXListViewDropNowhere];
